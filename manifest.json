@@ -11,13 +11,21 @@
     "content_scripts": [
         {
             "matches": ["https://web.whatsapp.com/*"],
-            "js": [
-                "./index.js"
-            ],
+            "js": ["./index.js"],
             "run_at": "document_end"
         }
     ],
-    "host_permissions" : ["https://web.whatsapp.com/"],
+    "host_permissions": ["https://web.whatsapp.com/"],
     "manifest_version": 3,
-    "web_accessible_resources": [{"resources": ["packed.js"], "matches": ["https://web.whatsapp.com/*"]} ]
+    "web_accessible_resources": [
+        {
+            "resources": ["packed.js"],
+            "matches": ["https://web.whatsapp.com/*"]
+        }
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "sjsaha123ksjckadsjf@gmail.com"
+        }
+    }
 }

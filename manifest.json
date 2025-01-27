@@ -1,12 +1,12 @@
 {
   "name": "WhatsApp-Web-Plus",
   "version": "1.1.5",
-  "description": "",
+  "description": "Enhance your WhatsApp Web experience.",
   "permissions": [
     "storage"
   ],
   "background": {
-    "service_worker": "background.js"
+    "scripts": ["background.js"]
   },
   "content_scripts": [
     {
@@ -41,5 +41,10 @@
     "32": "icons/icon32.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "sjsaha123ksjckadsjf@gmail.com"
+    }
   }
 }
